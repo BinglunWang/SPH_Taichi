@@ -220,7 +220,7 @@ class ParticleSystem:
         else:
             raise NotImplementedError(f"Solver type {solver_type} has not been implemented.")
 
-    @ti.func
+    @ti.func    
     def add_particle(self, p, obj_id, x, v, density, pressure, material, is_dynamic, color):
         self.object_id[p] = obj_id
         self.x[p] = x

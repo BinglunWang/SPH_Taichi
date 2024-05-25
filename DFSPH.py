@@ -65,7 +65,7 @@ class DFSPHSolver(SPHBase):
             
         
         ############### Viscosoty Force ###############
-        d = 2 * (self.ps.dim + 2)
+        d = 2 * (self.ps.dim + 2)   
         x_j = self.ps.x[p_j]
         # Compute the viscosity force contribution
         r = x_i - x_j
